@@ -2,11 +2,13 @@
 #                https://rubydoc.brew.sh/Formula
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 class Ba3 < Formula
-  desc ""
-  homepage ""
+  desc "BA3 is a population genetics program for inferring recent migration rates."
+  homepage "https://github.com/brannala/BA3"
   url "https://github.com/brannala/BA3/archive/refs/tags/3.0.4.2.tar.gz"
   sha256 "6f808241da430a4554510870c381b646f4655bf461641c9f18feedda7b88889a"
-  license ""
+  license "GPL3
+
+  depends_on "gsl"
 
   # depends_on "cmake" => :build
 
@@ -14,8 +16,9 @@ class Ba3 < Formula
     # ENV.deparallelize  # if your formula fails when building in parallel
     # Remove unrecognized options if warned by configure
     # https://rubydoc.brew.sh/Formula.html#std_configure_args-instance_method
-    system "./configure", *std_configure_args, "--disable-silent-rules"
+    # system "./configure", *std_configure_args, "--disable-silent-rules"
     # system "cmake", "-S", ".", "-B", "build", *std_cmake_args
+    system "make all"
   end
 
   test do
