@@ -6,7 +6,7 @@ class Ba3 < Formula
   homepage "https://github.com/brannala/BA3"
   url "https://github.com/brannala/BA3/archive/refs/tags/3.0.4.2.tar.gz"
   sha256 "6f808241da430a4554510870c381b646f4655bf461641c9f18feedda7b88889a"
-  license "GPL3
+  license "GPL3"
 
   depends_on "gsl"
 
