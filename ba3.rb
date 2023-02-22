@@ -19,7 +19,7 @@ class Ba3 < Formula
     # system "./configure", *std_configure_args, "--disable-silent-rules"
     # system "cmake", "-S", ".", "-B", "build", *std_cmake_args
     system "make all"
-    bin.install "BA3SNP"
+    bin.install "BA3SNP" "BA3MSAT"
   end
 
   test do
