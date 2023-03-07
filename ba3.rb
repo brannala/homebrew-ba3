@@ -2,10 +2,10 @@
 #                https://rubydoc.brew.sh/Formula
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 class Ba3 < Formula
-  desc "BA3 BayesAss is a population genetics program for inferring recent migration rates"
+  desc "BA3 BayesAss is a population genetic program for inferring recent migration rates"
   homepage "https://github.com/brannala/BA3"
-  url "https://github.com/brannala/BA3/archive/refs/tags/3.0.5.3.tar.gz"
-  sha256 "c8c2a15c406de8d41b2a861faec83f16a256f76693dc8335a471deb788f001b1"
+  url "https://github.com/brannala/BA3/archive/refs/tags/3.0.5.2.tar.gz"
+  sha256 "9488538bac00ab4946472ccf7d3a1e2e442101dd0c9ba1aeba8bfd406ecf748b"
   license "GPL3"
 
   # depends_on "cmake" => :build
@@ -17,6 +17,7 @@ class Ba3 < Formula
     system "make all"
     bin.install "BA3SNP"
     bin.install "BA3MSAT"
+    # system "cmake", "-S", ".", "-B", "build", *std_cmake_args
   end
 
   test do
