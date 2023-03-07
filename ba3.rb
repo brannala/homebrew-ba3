@@ -4,8 +4,8 @@
 class Ba3 < Formula
   desc "BA3 BayesAss is a population genetic program for inferring recent migration rates"
   homepage "https://github.com/brannala/BA3"
-  url "https://github.com/brannala/BA3/archive/refs/tags/3.0.5.2.tar.gz"
-  sha256 "9488538bac00ab4946472ccf7d3a1e2e442101dd0c9ba1aeba8bfd406ecf748b"
+  url "https://github.com/brannala/BA3/archive/refs/tags/3.0.5.5.tar.gz"
+  sha256 "37bcb7982dc0083dfd0174df555e0dcb52915b8485d6fb86dcb7d7284ab07b8e"
   license "GPL3"
 
   # depends_on "cmake" => :build
