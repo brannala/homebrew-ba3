@@ -1,8 +1,8 @@
 class Ba3 < Formula
   desc "Bayesian inference of recent migration rates using multilocus genotypes"
   homepage "https://github.com/brannala/BA3/"
-  url "https://github.com/brannala/BA3/releases/download/v3.4.0/BA3-3.4.0.tar.gz"
-  sha256 "69e01f326c26c0a2d7ec9c8a3680879e69997d958db693a62f5e03e1c316ebe7"
+  url "https://github.com/brannala/BA3/releases/download/v3.5.0/BA3-3.5.0.tar.gz"
+  sha256 "d5e6872d3ec35c7bce92bc19b151263de37bd7dc4c6e8bb996c20b03e8d52296"
   license "AGPL-3.0-or-later"
 
   depends_on "gsl"
